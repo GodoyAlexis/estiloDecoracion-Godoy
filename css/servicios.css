@@ -1,0 +1,213 @@
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, black), to(orange));
+  background-image: linear-gradient(black 5%, orange);
+  min-height: 100px;
+  text-transform: capitalize;
+}
+
+.header .logo {
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 40px;
+  text-shadow: 5px 2px black;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: desvanecimiento;
+          animation-name: desvanecimiento;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.header .logo span {
+  color: #333;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 2px 2px grey;
+}
+
+@-webkit-keyframes desvanecimiento {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes desvanecimiento {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.encabezado__barra {
+  background-color: grey !important;
+  font-family: cursive;
+}
+
+.servicios {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section1 {
+  height: auto;
+  width: 100%;
+  background-color: #333;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+  -ms-grid-rows: 60px 300px;
+      grid-template-rows: 60px 300px;
+  border: 2px solid orange;
+}
+
+.section1 .cajaT {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  border: 2px solid #fff;
+  text-align: center;
+  padding-top: 20px;
+  font-variant: small-caps;
+  font-size: 20px;
+  color: orange;
+}
+
+.section1 .cajaT:hover {
+  background-color: #b39b13;
+  color: white;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.section1 .cajaC {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  border: 2px solid #fff;
+  text-align: center;
+  padding-top: 120px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: orange;
+}
+
+.section2 {
+  height: 350px;
+  width: 100%;
+  background-color: #333;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  border: 2px solid orange;
+}
+
+.section2 .item {
+  height: auto;
+  width: 100%;
+  border: 2px solid #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2 .subtitulo {
+  background-color: black;
+  text-align: center;
+  font-variant: small-caps;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.section2 .pasos {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.section2 .pasos li {
+  list-style-position: inside;
+  color: orange;
+  line-height: 2;
+}
+
+.section2 .bucle {
+  height: 20%;
+  width: 100%;
+}
+
+.section2 .bucle-1 {
+  background-color: #51370d;
+}
+
+.section2 .bucle-2 {
+  background-color: #7d5414;
+}
+
+.section2 .bucle-3 {
+  background-color: #a9721b;
+}
+
+.section2 .bucle-4 {
+  background-color: #d59022;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(orange), to(black));
+  background-image: linear-gradient(orange, black);
+  font-size: 20px;
+  text-align: center;
+  font-variant: small-caps;
+  line-height: 1.8;
+  padding: 10px;
+}
+
+footer h5 {
+  color: #333;
+}
+
+footer a img {
+  margin: 0 7px 0 7px;
+}
+
+footer img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=servicios.css.map */

@@ -1,0 +1,126 @@
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: linear-gradient(black 5%, orange);
+    min-height: 100px;
+    text-transform: capitalize;
+
+    .logo {
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 40px;
+        text-shadow: 5px 2px black;
+        animation-duration: 2s;
+        animation-name: desvanecimiento;
+        animation-delay: 3s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        span {
+            color: #333;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px grey;
+        }
+    }
+
+    @keyframes desvanecimiento {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.encabezado__barra {
+    background-color: grey !important;
+    font-family: cursive;
+}
+
+.titulo {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    margin: 0;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+
+.contacto {
+    background-color: #333;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-content: space-around;
+    background-image: url(../images/maderaOscuro.jpg);
+
+    .contacto__contenedor {
+        background-color: #333;
+        width: 70%;
+        height: 75%;
+        background-image: url(../images/maderaOscuro.jpg);
+        text-align: center;
+        background-position: center;
+        border: 3px solid orange;
+        padding: 20px;
+
+        legend {
+            text-shadow: 1px 1px orange;
+            padding: 10px;
+        }
+
+        form {
+            line-height: 1.5;
+        }
+
+        input.button {
+            background-color: black;
+        }
+
+        #Identificacion {
+            background-color: black;
+        }
+    }
+
+}
+
+
+
+
+footer {
+    background-image: linear-gradient(orange, black);
+    font-size: 20px;
+    text-align: center;
+    font-variant: small-caps;
+    line-height: 1.8;
+    margin: 0;
+    padding: 10px;
+
+    h5 {
+        color: #333;
+    }
+
+    a img {
+        margin: 0 7px 0 7px;
+    }
+
+    img:hover {
+        transform: scale(1.5);
+    }
+}

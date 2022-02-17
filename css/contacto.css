@@ -1,0 +1,154 @@
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, black), to(orange));
+  background-image: linear-gradient(black 5%, orange);
+  min-height: 100px;
+  text-transform: capitalize;
+}
+
+.header .logo {
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 40px;
+  text-shadow: 5px 2px black;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: desvanecimiento;
+          animation-name: desvanecimiento;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.header .logo span {
+  color: #333;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 2px 2px grey;
+}
+
+@-webkit-keyframes desvanecimiento {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes desvanecimiento {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.encabezado__barra {
+  background-color: grey !important;
+  font-family: cursive;
+}
+
+.titulo {
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  margin: 0;
+  font-size: 40px;
+  font-variant: small-caps;
+}
+
+.contacto {
+  background-color: #333;
+  height: 700px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-image: url(../images/maderaOscuro.jpg);
+}
+
+.contacto .contacto__contenedor {
+  background-color: #333;
+  width: 70%;
+  height: 75%;
+  background-image: url(../images/maderaOscuro.jpg);
+  text-align: center;
+  background-position: center;
+  border: 3px solid orange;
+  padding: 20px;
+}
+
+.contacto .contacto__contenedor legend {
+  text-shadow: 1px 1px orange;
+  padding: 10px;
+}
+
+.contacto .contacto__contenedor form {
+  line-height: 1.5;
+}
+
+.contacto .contacto__contenedor input.button {
+  background-color: black;
+}
+
+.contacto .contacto__contenedor #Identificacion {
+  background-color: black;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(orange), to(black));
+  background-image: linear-gradient(orange, black);
+  font-size: 20px;
+  text-align: center;
+  font-variant: small-caps;
+  line-height: 1.8;
+  margin: 0;
+  padding: 10px;
+}
+
+footer h5 {
+  color: #333;
+}
+
+footer a img {
+  margin: 0 7px 0 7px;
+}
+
+footer img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=contacto.css.map */

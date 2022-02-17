@@ -1,0 +1,162 @@
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$color1: orange;
+
+.header {
+    background-image: linear-gradient(black 5%, $color1);
+    min-height: 100px;
+    text-transform: capitalize;
+
+    .logo {
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 40px;
+        text-shadow: 5px 2px black;
+        animation-duration: 2s;
+        animation-name: desvanecimiento;
+        animation-delay: 3s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        span {
+            color: #333;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px grey;
+        }
+    }
+
+    @keyframes desvanecimiento {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.encabezado__barra {
+    background-color: grey !important;
+    font-family: cursive;
+}
+
+.titulo {
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+$largo1:600px;
+
+.sec {
+    background-color: #333;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-content: space-around;
+
+}
+
+.caja {
+    height: 80%;
+    width: 60%;
+    background: grey;
+    border: 2px solid #fff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    line-height: 2.6;
+}
+
+.caja1 {
+    background-image: linear-gradient(gold, $color1, rgb(160, 137, 9));
+    width: ($largo1*2) - 150px;
+
+
+    ul {
+        list-style: none;
+
+        li {
+            color: #333;
+            font-variant: small-caps;
+
+            b {
+                color: #333;
+                font-variant: small-caps;
+            }
+        }
+    }
+}
+
+.sec2 {
+    height: 600px;
+    width: 100%;
+}
+
+$item1: 200px;
+$item2: 600px;
+
+.personal {
+    background-color: red;
+    height: auto;
+    width: 100%;
+
+    .flex-container {
+        display: flex;
+        background-color: #333;
+        padding: 20px;
+        justify-content: center;
+
+        .item {
+            background-color: gainsboro;
+            background-image: url(../images/equipo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: ($item2/2) + ($item1);
+            height: 400px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            border: 2px solid black;
+        }
+    }
+}
+
+footer {
+    background-image: linear-gradient($color1, black);
+    font-size: 20px;
+    text-align: center;
+    font-variant: small-caps;
+    line-height: 1.8;
+    margin: 0;
+    padding: 10px;
+
+    h5 {
+        color: #333;
+    }
+
+    a img {
+        margin: 0 7px 0 7px;
+    }
+
+    img:hover {
+        transform: scale(1.5);
+    }
+}

@@ -1,0 +1,180 @@
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: linear-gradient(black 5%, orange);
+    min-height: 100px;
+    text-transform: capitalize;
+
+    .logo {
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+        font-size: 40px;
+        text-shadow: 5px 2px black;
+        animation-duration: 2s;
+        animation-name: desvanecimiento;
+        animation-delay: 3s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+
+        span {
+            color: #333;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px grey;
+        }
+    }
+
+    @keyframes desvanecimiento {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.encabezado__barra {
+    background-color: grey !important;
+    font-family: cursive;
+}
+
+.servicios {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section1 {
+    height: auto;
+    width: 100%;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 60px 300px;
+    border: 2px solid orange;
+
+    .cajaT {
+        height: 100%;
+        width: 100%;
+        background-color: #333;
+        border: 2px solid #fff;
+        text-align: center;
+        padding-top: 20px;
+        font-variant: small-caps;
+        font-size: 20px;
+        color: orange;
+    }
+
+    .cajaT:hover {
+        background-color: rgb(179, 155, 19);
+        color: white;
+        cursor: pointer;
+        transition-duration: 1s;
+    }
+
+    .cajaC {
+        height: 100%;
+        width: 100%;
+        background-color: #333;
+        border: 2px solid #fff;
+        text-align: center;
+        padding-top: 120px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: orange;
+    }
+}
+
+
+
+.section2 {
+    height: 350px;
+    width: 100%;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border: 2px solid orange;
+
+    .item {
+        height: auto;
+        width: 100%;
+        border: 2px solid #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        justify-content: center;
+    }
+
+    .subtitulo {
+        background-color: black;
+        text-align: center;
+        font-variant: small-caps;
+        padding: 10px;
+        font-size: 20px;
+
+    }
+
+    .pasos {
+        padding-top: 20px;
+        padding-left: 15px;
+
+        li {
+            list-style-position: inside;
+            color: orange;
+            line-height: 2;
+        }
+    }
+
+    .bucle {
+        height: 20%;
+        width: 100%;
+    }
+
+    $base-color: rgb(37, 25, 6);
+
+    @for $in from 1 through 4 {
+        .bucle-#{$in} {
+            background-color: lighten($base-color, $in * 10%);
+        }
+    }
+}
+
+
+
+
+footer {
+    background-image: linear-gradient(orange, black);
+    font-size: 20px;
+    text-align: center;
+    font-variant: small-caps;
+    line-height: 1.8;
+    padding: 10px;
+
+    h5 {
+        color: #333;
+    }
+
+    a img {
+        margin: 0 7px 0 7px;
+    }
+
+    img:hover {
+        transform: scale(1.5);
+    }
+
+}
