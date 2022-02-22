@@ -101,6 +101,13 @@ $largo1:600px;
                 font-variant: small-caps;
             }
         }
+
+        li:hover {
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
     }
 }
 
@@ -135,6 +142,13 @@ $item2: 600px;
             text-align: center;
             line-height: 75px;
             border: 2px solid black;
+        }
+
+        .item:hover {
+            width: 1000px;
+            cursor: pointer;
+            transition-duration: 0.5s;
+            height: 600px;
         }
     }
 }

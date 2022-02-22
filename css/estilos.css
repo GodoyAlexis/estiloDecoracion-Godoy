@@ -77,6 +77,11 @@ main .redes {
   font-family: cursive;
 }
 
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main a img {
   margin: 0 8px 0 8px;
 }

@@ -94,7 +94,7 @@ main .gallery .gallery__picture {
 }
 
 main .gallery .gallery__picture::before {
-  content: "";
+  content: "bvuiutv";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -123,6 +123,38 @@ main .gallery .gallery__picture::before {
 main .gallery .gallery__picture:hover::before {
   -webkit-transform: scale(1) rotate(360deg);
           transform: scale(1) rotate(360deg);
+}
+
+main .gallery .gallery__picture--g1::before {
+  content: "Minimalista";
+}
+
+main .gallery .gallery__picture--g2::before {
+  content: "Moderno claro";
+}
+
+main .gallery .gallery__picture--g3::before {
+  content: "Farmhouse";
+}
+
+main .gallery .gallery__picture--g4::before {
+  content: "Rustico";
+}
+
+main .gallery .gallery__picture--g5::before {
+  content: "Escandinavo";
+}
+
+main .gallery .gallery__picture--g6::before {
+  content: "Clasico Moderno";
+}
+
+main .gallery .gallery__picture--g7::before {
+  content: "Elegante";
+}
+
+main .gallery .gallery__picture--g8::before {
+  content: "Clasico";
 }
 
 main .gallery .gallery__img {
