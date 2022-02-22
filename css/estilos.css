@@ -81,7 +81,7 @@ main a img {
   margin: 0 8px 0 8px;
 }
 
-main img:hover {
+main a img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
