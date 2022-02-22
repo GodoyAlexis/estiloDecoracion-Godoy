@@ -71,7 +71,7 @@
     background-image: url(../images/maderaOscuro.jpg);
 
     .contacto__contenedor {
-        background-color: #333;
+        background-color: orange;
         width: 70%;
         height: 75%;
         background-image: url(../images/maderaOscuro.jpg);
@@ -89,8 +89,12 @@
             line-height: 1.5;
         }
 
+        input {
+            color: black;
+        }
+
         input.button {
-            background-color: black;
+            background-color: orange;
         }
 
         #Identificacion {

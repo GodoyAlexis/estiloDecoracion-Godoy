@@ -101,7 +101,7 @@
 }
 
 .contacto .contacto__contenedor {
-  background-color: #333;
+  background-color: orange;
   width: 70%;
   height: 75%;
   background-image: url(../images/maderaOscuro.jpg);
@@ -120,8 +120,12 @@
   line-height: 1.5;
 }
 
+.contacto .contacto__contenedor input {
+  color: black;
+}
+
 .contacto .contacto__contenedor input.button {
-  background-color: black;
+  background-color: orange;
 }
 
 .contacto .contacto__contenedor #Identificacion {

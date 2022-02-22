@@ -81,10 +81,12 @@
     }
 
     .cajaT:hover {
-        background-color: rgb(179, 155, 19);
+        background-color: orange;
         color: white;
         cursor: pointer;
-        transition-duration: 1s;
+        transition-duration: 1.3s;
+        font-size: 20px;
+        padding-top: 10px;
     }
 
     .cajaC {
@@ -94,10 +96,21 @@
         border: 2px solid #fff;
         text-align: center;
         padding-top: 120px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: sant-serif;
+        font-variant: small-caps;
         padding-left: 10px;
         padding-right: 10px;
         color: orange;
+    }
+
+    .cajaC:hover{
+        font-size: 20px;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        padding-top: 60px;
+        transition-duration: 1.3s;
+        cursor: pointer;
     }
 }
 
@@ -126,7 +139,13 @@
         font-variant: small-caps;
         padding: 10px;
         font-size: 20px;
-
+    }
+    .subtitulo:hover{
+        color: black;
+        background-color: white;
+        transition-duration: 1s;
+        font-size: 25px;
+        cursor: pointer
     }
 
     .pasos {
@@ -138,18 +157,29 @@
             color: orange;
             line-height: 2;
         }
+        li:hover{
+            color: white;
+            cursor: pointer;
+            transition-duration: 0.5s;
+            font-size: 18px;
+        }
     }
-
-    .bucle {
-        height: 20%;
-        width: 100%;
-    }
-
-    $base-color: rgb(37, 25, 6);
-
-    @for $in from 1 through 4 {
-        .bucle-#{$in} {
-            background-color: lighten($base-color, $in * 10%);
+    .beneficios {
+        list-style-position: inside;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: orange;
+        line-height: 1.6;
+        li {
+            list-style-type: square;
+            color: orange;
+        }
+        li:hover{
+            color: white;
+            cursor: pointer;
+            transition-duration: 0.5s;
+            font-size: 18px;
         }
     }
 }

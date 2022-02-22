@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 * {
   color: white;
   padding: 0;
@@ -8,6 +9,7 @@
 
 body {
   background-image: url(../images/fondoMadera.jpg);
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -63,144 +65,125 @@ body {
 
 .encabezado__barra {
   background-color: grey !important;
-  font-family: cursive;
 }
 
-.fotos {
-  height: auto;
-  width: 100%;
-  background-color: #333;
+main .title {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  padding-top: .7em;
+  text-shadow: 2px 2px 0 black;
+}
+
+main .gallery {
+  padding-bottom: 3em;
+  padding-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+      grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img4" "img5 img5 img6 img7" "img5 img5 img8 img8";
+  gap: .8em;
+}
+
+main .gallery .gallery__picture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+main .gallery .gallery__picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.548);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 25px;
+  font-size: 1.5rem;
 }
 
-.fotos .contenedor {
-  width: 90%;
-  height: auto;
-  background: violet;
-  display: -ms-grid;
-  display: grid;
+main .gallery .gallery__picture:hover::before {
+  -webkit-transform: scale(1) rotate(360deg);
+          transform: scale(1) rotate(360deg);
 }
 
-.fotos .contenedor .item {
-  min-height: 200px;
-  min-width: 200px;
-  background-color: white;
-  border: 2.5px solid #fff;
+main .gallery .gallery__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.fotos .contenedor .item1 {
+main .gallery .gallery__picture--g1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  background-image: url(../images/img15.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.fotos .contenedor .item2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  background-image: url(../images/img2.jfif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.fotos .contenedor .item3 {
-  -ms-grid-column: 3;
   -ms-grid-column-span: 2;
-  grid-column: 3/5;
+  grid-area: img1;
+}
+
+main .gallery .gallery__picture--g2 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  background-image: url(../images/img3.jfif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.fotos .contenedor .item4 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
-  background-image: url(../images/img4.jfif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.fotos .contenedor .item5 {
   -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  background-image: url(../images/img5.jfif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  grid-area: img2;
 }
 
-.fotos .contenedor .item6 {
+main .gallery .gallery__picture--g3 {
+  -ms-grid-row: 1;
   -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
+  grid-area: img3;
+}
+
+main .gallery .gallery__picture--g4 {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  background-image: url(../images/img6.jfif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.fotos .contenedor .item7 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  background-image: url(../images/img7.jfif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.fotos .contenedor .item8 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
-  grid-column: 3/5;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  background-image: url(../images/img8.jfif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  grid-area: img4;
 }
 
-h2 {
-  font-size: 35px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 2;
-  background-color: black;
-  margin: 0;
-  padding: 5px;
+main .gallery .gallery__picture--g5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img5;
+}
+
+main .gallery .gallery__picture--g6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: img6;
+}
+
+main .gallery .gallery__picture--g7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: img7;
+}
+
+main .gallery .gallery__picture--g8 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img8;
 }
 
 footer {
@@ -225,5 +208,20 @@ footer a img {
 footer img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  main .title {
+    font-size: 1.5rem;
+    padding-top: .8em;
+  }
+  main .gallery {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img4 img4" "img4 img4" "img5 img5" "img5 img5" "img6 img7" "img8 img8" "img8 img8";
+  }
+  main .gallery__picture::before {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=fotos.css.map */
