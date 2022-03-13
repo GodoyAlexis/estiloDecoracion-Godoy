@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 
-$color1: orange;
 
 .header {
-    background-image: linear-gradient(black 5%, $color1);
+    background-image: linear-gradient(black 5%, orange);
     min-height: 100px;
     text-transform: capitalize;
 
@@ -48,113 +47,110 @@ $color1: orange;
     font-family: cursive;
 }
 
-.titulo {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px;
-    margin: 0;
-}
-
-$largo1:600px;
-
-.sec {
-    background-color: #333;
-    height: 600px;
-    width: 100%;
+section.primerContainer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    align-content: space-around;
+    margin: 0;
+    padding: 0;
+    height: 450px;
 
-}
+    .caja1 {
+        width: 70%;
+        height: 450px;
+        background-color: #fff;
 
-.caja {
-    height: 80%;
-    width: 60%;
-    background: grey;
-    border: 2px solid #fff;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    line-height: 2.6;
-}
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-.caja1 {
-    background-image: linear-gradient(gold, $color1, rgb(160, 137, 9));
-    width: ($largo1*2) - 150px;
+    .caja2 {
+        width: 30%;
+        height: 450px;
+        background: linear-gradient(rgba(209, 206, 206, 0.4), rgba(5, 7, 12, 0.8)), url(../images/fondoMadera.jpg);
+        padding-left: 20px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-
-    ul {
-        list-style: none;
-
-        li {
-            color: #333;
-            font-variant: small-caps;
-
-            b {
-                color: #333;
-                font-variant: small-caps;
-            }
+        .horariosTitulo {
+            font-size: 2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 1px 1px 5px black;
         }
 
-        li:hover {
-            color: white;
-            font-size: 25px;
-            cursor: pointer;
-            transition-duration: 0.5s;
+        span.dia {
+            text-decoration: underline;
+            text-shadow: 1px 1px 5px black;
         }
+
+        .horarios {
+            font-family: cursive;
+            line-height: 2.3rem;
+        }
+
     }
 }
 
-.sec2 {
-    height: 600px;
-    width: 100%;
+h3.tituloEquipo {
+    text-shadow: 1px 1px 5px #fff;
+    background-color: #3338;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.7rem;
+    padding: 18px 0px 25px 0px;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
 }
 
-$item1: 200px;
-$item2: 600px;
+h3.subtitulo {
+    background-color: #3338;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+}
 
-.personal {
-    background-color: red;
+section.segundoContainer {
+    margin: 0px 0px 0px 0px;
+    padding: 30px 0px 30px 0px;
     height: auto;
-    width: 100%;
+    background: #3335;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 
-    .flex-container {
-        display: flex;
-        background-color: #333;
-        padding: 20px;
-        justify-content: center;
+    div.img {
+        height: auto;
+        width: 200px;
+        margin: 20px 50px 20px 50px;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
 
-        .item {
-            background-color: gainsboro;
-            background-image: url(../images/equipo.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: ($item2/2) + ($item1);
-            height: 400px;
-            margin: 10px;
-            text-align: center;
-            line-height: 75px;
-            border: 2px solid black;
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid black;
         }
 
-        .item:hover {
-            width: 1000px;
-            cursor: pointer;
-            transition-duration: 0.5s;
-            height: 600px;
+        .nombre {
+            color: #fff;
+            text-shadow: 2px 1px 6px black;
         }
     }
 }
 
 footer {
-    background-image: linear-gradient($color1, black);
+    background-image: linear-gradient(orange, black);
     font-size: 20px;
     text-align: center;
     font-variant: small-caps;

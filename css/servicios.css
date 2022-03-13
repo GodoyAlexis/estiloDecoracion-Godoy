@@ -15,7 +15,7 @@
 
 .header .logo {
   color: #fff;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   float: left;
   margin-top: 15px;
   margin-left: 10px;
@@ -35,7 +35,7 @@
 
 .header .logo span {
   color: #333;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-shadow: 2px 2px grey;
 }
 
@@ -62,162 +62,197 @@
   font-family: cursive;
 }
 
-.servicios {
+section.main div.fondoImg1 {
   width: 100%;
-  background-color: black;
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url(../images/img1..jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/img1..jpg);
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section1 {
-  height: auto;
-  width: 100%;
-  background-color: #333;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 60px 300px;
-      grid-template-rows: 60px 300px;
-  border: 2px solid orange;
+section.main div.fondoImg1 .cajaEtapas {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.66)));
+  background: linear-gradient(rgba(5, 7, 12, 0.66));
+  height: 150px;
+  width: 50%;
 }
 
-.section1 .cajaT {
-  height: 100%;
+section.main div.fondoImg1 .cajaEtapas .c {
+  height: 60%;
   width: 100%;
-  background-color: #333;
-  border: 2px solid #fff;
-  text-align: center;
-  padding-top: 20px;
-  font-variant: small-caps;
-  font-size: 20px;
   color: orange;
-}
-
-.section1 .cajaT:hover {
-  background-color: orange;
-  color: white;
-  cursor: pointer;
-  -webkit-transition-duration: 1.3s;
-          transition-duration: 1.3s;
-  font-size: 20px;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding-top: 10px;
 }
 
-.section1 .cajaC {
-  height: 100%;
+section.main div.fondoImg1 .cajaEtapas .d {
+  height: 40%;
   width: 100%;
-  background-color: #333;
-  border: 2px solid #fff;
-  text-align: center;
-  padding-top: 120px;
-  font-family: sant-serif;
+  text-align: right;
+  padding: 15px 25px 0px 0px;
   font-variant: small-caps;
+}
+
+section.main .titulo1 {
+  background-color: #3339;
+  text-shadow: 4px 4px 7px black;
+  height: 80px;
+  padding: 15px 0px 0px 60px;
+  margin: 0;
+}
+
+section.main div.cajaAsesoria {
+  height: 300px;
+  width: 100%;
+  background-image: url(../images/img7.jpg);
+  background-size: cover;
+  background-position: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.main div.cajaAsesoria .incluye {
+  color: black;
+  width: 40%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.8)), to(rgba(5, 7, 12, 0.8)));
+  background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8));
+}
+
+section.main div.cajaAsesoria .incluye div.itemT {
+  text-decoration: underline;
+}
+
+section.main div.cajaAsesoria .incluye div.itemA {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 17px;
+  margin: 10px 0px;
   padding-left: 10px;
-  padding-right: 10px;
-  color: orange;
 }
 
-.section1 .cajaC:hover {
-  font-size: 20px;
-  background-color: orange;
-  color: white;
+section.main div.cajaAsesoria .carrousel {
+  width: 60%;
+  height: 200px;
+}
+
+section.main div.cajaAsesoria .carrousel img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+section.main div.contratanos {
+  height: 200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.65))), url(../images/maderaCalid.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.65)), url(../images/maderaCalid.jpg);
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   text-align: center;
-  padding-top: 60px;
-  -webkit-transition-duration: 1.3s;
-          transition-duration: 1.3s;
-  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.section2 {
-  height: 350px;
-  width: 100%;
-  background-color: #333;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  border: 2px solid orange;
-}
-
-.section2 .item {
-  height: auto;
-  width: 100%;
-  border: 2px solid #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+section.main div.contratanos .cajasC {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section2 .subtitulo {
-  background-color: black;
-  text-align: center;
-  font-variant: small-caps;
-  padding: 10px;
+section.main div.contratanos .cajasC .itemsContratanos1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  height: 170px;
+  width: 40%;
+}
+
+section.main div.contratanos .cajasC .itemsContratanos1 p {
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  line-height: 35px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+section.main div.contratanos .cajasC .itemsContratanos1 p:hover {
+  cursor: pointer;
+}
+
+section.main div.contratanos .cajasC .itemsContratanos1 img:hover {
+  cursor: pointer;
+}
+
+section.main div.contratanos .cajasC .itemsContratanos2 {
+  height: 150px;
+  width: 60%;
+}
+
+section.main div.contratanos .cajasC .itemsContratanos2 .ofrecemos {
+  color: white;
   font-size: 20px;
+  font-family: sans-serif;
+  margin: 10px 0px;
 }
 
-.section2 .subtitulo:hover {
-  color: black;
-  background-color: white;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+section.main div.contratanos .cajasC .itemsContratanos2 .botonContratanos {
+  width: 80%;
+  margin: 32px;
+  background: rgba(5, 7, 12, 0.8);
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+  color: orange;
   font-size: 25px;
+  border: 1px solid #fff7;
   cursor: pointer;
 }
 
-.section2 .pasos {
-  padding-top: 20px;
-  padding-left: 15px;
-}
-
-.section2 .pasos li {
-  list-style-position: inside;
-  color: orange;
-  line-height: 2;
-}
-
-.section2 .pasos li:hover {
+section.main div.contratanos .cajasC .itemsContratanos2 .botonContratanos:hover {
+  background-color: orange;
   color: white;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  font-size: 18px;
-}
-
-.section2 .beneficios {
-  list-style-position: inside;
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: orange;
-  line-height: 1.6;
-}
-
-.section2 .beneficios li {
-  list-style-type: square;
-  color: orange;
-}
-
-.section2 .beneficios li:hover {
-  color: white;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  font-size: 18px;
 }
 
 footer {

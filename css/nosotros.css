@@ -61,21 +61,7 @@
   font-family: cursive;
 }
 
-.titulo {
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 35px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
-  margin: 0;
-}
-
-.sec {
-  background-color: #333;
-  height: 600px;
-  width: 100%;
+section.primerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,96 +69,119 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  margin: 0;
+  padding: 0;
+  height: 450px;
 }
 
-.caja {
-  height: 80%;
-  width: 60%;
-  background: grey;
-  border: 2px solid #fff;
+section.primerContainer .caja1 {
+  width: 70%;
+  height: 450px;
+  background-color: #fff;
+}
+
+section.primerContainer .caja1 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+section.primerContainer .caja2 {
+  width: 30%;
+  height: 450px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 206, 206, 0.4)), to(rgba(5, 7, 12, 0.8))), url(../images/fondoMadera.jpg);
+  background: linear-gradient(rgba(209, 206, 206, 0.4), rgba(5, 7, 12, 0.8)), url(../images/fondoMadera.jpg);
+  padding-left: 20px;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  line-height: 2.6;
-}
-
-.caja1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(gold), color-stop(orange), to(#a08909));
-  background-image: linear-gradient(gold, orange, #a08909);
-  width: 1050px;
-}
-
-.caja1 ul {
-  list-style: none;
-}
-
-.caja1 ul li {
-  color: #333;
-  font-variant: small-caps;
-}
-
-.caja1 ul li b {
-  color: #333;
-  font-variant: small-caps;
-}
-
-.caja1 ul li:hover {
-  color: white;
-  font-size: 25px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
-.sec2 {
-  height: 600px;
-  width: 100%;
-}
-
-.personal {
-  background-color: red;
-  height: auto;
-  width: 100%;
-}
-
-.personal .flex-container {
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #333;
-  padding: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.personal .flex-container .item {
-  background-color: gainsboro;
-  background-image: url(../images/equipo.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 400px;
-  margin: 10px;
+section.primerContainer .caja2 .horariosTitulo {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 1px 1px 5px black;
+}
+
+section.primerContainer .caja2 span.dia {
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px black;
+}
+
+section.primerContainer .caja2 .horarios {
+  font-family: cursive;
+  line-height: 2.3rem;
+}
+
+h3.tituloEquipo {
+  text-shadow: 1px 1px 5px #fff;
+  background-color: #3338;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.7rem;
+  padding: 18px 0px 25px 0px;
+  margin: 0;
   text-align: center;
-  line-height: 75px;
-  border: 2px solid black;
+  text-decoration: underline;
 }
 
-.personal .flex-container .item:hover {
-  width: 1000px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  height: 600px;
+h3.subtitulo {
+  background-color: #3338;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+section.segundoContainer {
+  margin: 0px 0px 0px 0px;
+  padding: 30px 0px 30px 0px;
+  height: auto;
+  background: #3335;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.segundoContainer div.img {
+  height: auto;
+  width: 200px;
+  margin: 20px 50px 20px 50px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+section.segundoContainer div.img img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+section.segundoContainer div.img .nombre {
+  color: #fff;
+  text-shadow: 2px 1px 6px black;
 }
 
 footer {
