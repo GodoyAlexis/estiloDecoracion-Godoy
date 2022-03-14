@@ -17,7 +17,7 @@ header {
   height: 300px;
 }
 
-header .encabezado__logo {
+header .logo {
   text-align: center;
   color: #fff;
   text-shadow: 6px 2px black;
@@ -30,7 +30,7 @@ header .encabezado__logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-header .encabezado__logo span {
+header .logo span {
   color: #333;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 3px 2px grey;
@@ -137,34 +137,50 @@ main a img:hover {
 }
 
 footer {
-  padding: 0px 10px 0px 10px;
+  width: 100%;
+  margin: 0;
   font-weight: bold;
-  line-height: 4.7;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, black), color-stop(orange), to(#333));
   background-image: linear-gradient(black 30%, orange, #333);
   font-variant: small-caps;
+  text-align: center;
 }
 
-footer h5 {
+footer h3 {
   color: #fff;
   text-shadow: 1px 1px #333;
+  margin: 0;
+  font-size: 23px;
+  line-height: 40px;
 }
 
 @media (max-width: 576px) {
-  .logo {
-    font-size: 35px;
-    color: red;
-  }
-  h3 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
   a img {
     width: 30px;
     margin: 0 10px 0 10px;
   }
-  h5 {
-    font-size: 15px;
+  header {
+    height: auto;
+  }
+  header .logo {
+    line-height: 3;
+    padding-top: 25px;
+    font-size: 30px;
+  }
+  .main div.caja1 {
+    height: 150px;
+  }
+  .main div.caja1 .texto1 {
+    font-size: 20px;
+  }
+  .main div.caja1 .texto2 {
+    font-size: 20px;
+  }
+  .main .redes {
+    font-size: 25px;
+  }
+  footer h3 {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

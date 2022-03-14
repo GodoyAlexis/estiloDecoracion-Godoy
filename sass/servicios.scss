@@ -46,6 +46,7 @@
   background-color: grey !important;
   font-family: cursive;
 }
+
 section.main {
   div.fondoImg1 {
     width: 100%;
@@ -58,10 +59,12 @@ section.main {
     display: flex;
     justify-content: center;
     align-items: center;
+
     .cajaEtapas {
       background: linear-gradient(rgba(5, 7, 12, 0.66));
       height: 150px;
       width: 50%;
+
       .c {
         height: 60%;
         width: 100%;
@@ -72,6 +75,7 @@ section.main {
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         padding-top: 10px;
       }
+
       .d {
         height: 40%;
         width: 100%;
@@ -81,6 +85,7 @@ section.main {
       }
     }
   }
+
   .titulo1 {
     background-color: #3339;
     text-shadow: 4px 4px 7px black;
@@ -88,6 +93,7 @@ section.main {
     padding: 15px 0px 0px 60px;
     margin: 0;
   }
+
   div.cajaAsesoria {
     height: 300px;
     width: 100%;
@@ -102,9 +108,11 @@ section.main {
       color: black;
       width: 40%;
       background: linear-gradient(rgba(5, 7, 12, 0.8), rgba(5, 7, 12, 0.8));
+
       div.itemT {
         text-decoration: underline;
       }
+
       div.itemA {
         color: #fff;
         font-family: sans-serif;
@@ -113,9 +121,11 @@ section.main {
         padding-left: 10px;
       }
     }
+
     .carrousel {
       width: 60%;
       height: 200px;
+
       img {
         width: 100%;
         height: 300px;
@@ -124,6 +134,7 @@ section.main {
       }
     }
   }
+
   div.contratanos {
     height: 200px;
     background-image: linear-gradient(rgba(5, 7, 12, 0.65)),
@@ -133,11 +144,13 @@ section.main {
     object-fit: cover;
     text-align: center;
     display: flex;
+
     .cajasC {
       width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
+
       .itemsContratanos1 {
         object-fit: cover;
         background-size: 100%;
@@ -147,6 +160,7 @@ section.main {
         position: relative;
         height: 170px;
         width: 40%;
+
         p {
           font-size: 1rem;
           color: white;
@@ -157,10 +171,12 @@ section.main {
           line-height: 35px;
           text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
         }
-        p:hover{
-            cursor: pointer;
+
+        p:hover {
+          cursor: pointer;
         }
-        img:hover{
+
+        img:hover {
           cursor: pointer;
         }
       }
@@ -168,12 +184,14 @@ section.main {
       .itemsContratanos2 {
         height: 150px;
         width: 60%;
+
         .ofrecemos {
           color: white;
           font-size: 20px;
           font-family: sans-serif;
           margin: 10px 0px;
         }
+
         .botonContratanos {
           width: 80%;
           margin: 32px;
@@ -185,6 +203,7 @@ section.main {
           border: 1px solid #fff7;
           cursor: pointer;
         }
+
         .botonContratanos:hover {
           background-color: orange;
           color: white;
@@ -212,5 +231,86 @@ footer {
 
   img:hover {
     transform: scale(1.5);
+  }
+}
+
+@media (max-width: 992px) {
+  section.main {
+    div.fondoImg1 {
+      .cajaEtapas {
+        background: linear-gradient(rgba(5, 7, 12, 0.66));
+        height: 150px;
+        width: 50%;
+  
+        .c {
+          font-size: 20px;
+          padding-top: 15px;
+        }
+      }
+    }
+    div.cajaAsesoria {
+      height: auto;
+
+      div.incluye {
+        width: 100%;
+
+        div.itemA {
+          font-size: 16px;
+          margin: 10px 0px;
+          padding-left: 5px;
+        }
+      }
+
+      div.carrousel {
+        width: 100%;
+        height: 200px;
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+    div.contratanos {
+      .cajasC {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row;
+        .itemsContratanos1 {
+          object-fit: cover;
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          position: relative;
+          height: 100px;
+          width: 40%;
+  
+          p {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+        .itemsContratanos2 {
+          .ofrecemos {
+            color: white;
+            font-size: 16px;
+            font-family: sans-serif;
+            margin: 10px 0px;
+          }
+  
+          .botonContratanos {
+            width: 100%;
+            margin: 5px;
+            padding-right: 15px;
+            font-size: 16px;
+          }
+        }
+      }
+      
+    }
   }
 }
