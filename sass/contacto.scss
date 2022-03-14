@@ -67,7 +67,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)) ,url(../images/fondoContacto.jpg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/fondoContacto.jpg);
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -127,5 +127,18 @@ footer {
 
     img:hover {
         transform: scale(1.5);
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        height: auto;
+        width: 100%;
+
+        .contacto__contenedor {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+        }
     }
 }

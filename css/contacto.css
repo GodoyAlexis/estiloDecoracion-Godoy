@@ -158,4 +158,16 @@ footer img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
+
+@media (max-width: 768px) {
+  .contacto {
+    height: auto;
+    width: 100%;
+  }
+  .contacto .contacto__contenedor {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
 /*# sourceMappingURL=contacto.css.map */

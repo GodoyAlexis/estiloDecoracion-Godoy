@@ -207,4 +207,25 @@ footer img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
+
+@media (max-width: 576px) {
+  section.primerContainer {
+    height: auto;
+  }
+  section.primerContainer .caja1 {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+  }
+  section.primerContainer .caja2 {
+    width: 100%;
+    height: 300px;
+  }
+  section.primerContainer .caja2 .horariosTitulo {
+    font-size: 2.3rem;
+  }
+  section.primerContainer .caja2 .horarios {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=nosotros.css.map */

@@ -54,44 +54,56 @@
       <form action="">
         <fieldset>
           <legend class="legend"><b>Informacion personal</b></legend>
-          <label for="">Nombre:</label>
-          <input type="text" placeholder="Escribe tu nombre.." required />
-          <br>
-          <label for="">Apellido:</label>
-          <input type="text" placeholder="Escribe tu apellido.." />
-          <br>
+          <div>
+            <label for="">Nombre:</label>
+            <input type="text" placeholder="Escribe tu nombre.." required />
+          </div>
 
-          <label for="">Edad:</label>
-          <input type="number" />
-          <br>
+          <div>
+            <label for="">Apellido:</label>
+            <input type="text" placeholder="Escribe tu apellido.." />
+          </div>
 
-          <label for="">E-mail</label>
-          <input type="text" placeholder="Ej: estydec@gmail.com" />
-          <br>
+          <div>
+            <label for="">Edad:</label>
+            <input type="number" />
+          </div>
 
-          <label for="">Telefono:</label>
-          <input type="text" placeholder="Ej: 1154743497" />
-          <br>
+          <div>
+            <label for="">E-mail</label>
+            <input type="text" placeholder="Ej: estydec@gmail.com" />
+          </div>
 
-          <select name="Identificacion" id="Identificacion">
-            <option value="cuil">Cuil</option>
-            <option value="cuit">Cuit</option>
-            <option value="dni">Dni</option>
-          </select>
-          <input type="text" />
-          <br>  
-          <label for="">Indica tu genero:</label>
-          <input type="radio" name="genero" />
-          <label for="">Femenino</label>
-          <input type="radio" name="genero" />
-          <label for="">Masculino</label>
-          <br>
+          <div>
+            <label for="">Telefono:</label>
+            <input type="text" placeholder="Ej: 1154743497" />
+          </div>
 
-          <input type="checkbox" />
-          <label for="">Acepto los terminos y condiciones.</label>
-          <br>
-          <input type="reset" value="Borrar" class="button" />
-          <input type="submit" class="button" />
+          <div>
+            <select name="Identificacion" id="Identificacion">
+              <option value="cuil">Cuil</option>
+              <option value="cuit">Cuit</option>
+              <option value="dni">Dni</option>
+            </select>
+            <input type="text" />
+
+          </div>
+          <div>
+            <label for="">Indica tu genero:</label>
+            <input type="radio" name="genero" />
+            <label for="">Femenino</label>
+            <input type="radio" name="genero" />
+            <label for="">Masculino</label>
+          </div>
+
+          <div>
+            <input type="checkbox" />
+            <label for="">Acepto los terminos y condiciones.</label>
+          </div>
+          <div>
+            <input type="reset" value="Borrar" class="button" />
+            <input type="submit" class="button" />
+          </div>
         </fieldset>
       </form>
     </div>

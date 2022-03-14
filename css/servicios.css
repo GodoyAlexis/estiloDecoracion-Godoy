@@ -307,53 +307,33 @@ footer img:hover {
   section.main div.cajaAsesoria div.carrousel img {
     width: 100%;
     height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
   }
   section.main div.contratanos .cajasC {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row;
-            flex-flow: row;
   }
   section.main div.contratanos .cajasC .itemsContratanos1 {
-    -o-object-fit: cover;
-       object-fit: cover;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    position: relative;
-    height: 100px;
-    width: 40%;
+    height: 110px;
+    width: 70%;
   }
   section.main div.contratanos .cajasC .itemsContratanos1 p {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
+  }
+  section.main div.contratanos .cajasC .itemsContratanos2 {
+    width: 100%;
+    padding-top: 30px;
   }
   section.main div.contratanos .cajasC .itemsContratanos2 .ofrecemos {
-    color: white;
     font-size: 16px;
-    font-family: sans-serif;
     margin: 10px 0px;
+    width: 100%;
   }
   section.main div.contratanos .cajasC .itemsContratanos2 .botonContratanos {
     width: 100%;
     margin: 5px;
     padding-right: 15px;
     font-size: 16px;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=servicios.css.map */

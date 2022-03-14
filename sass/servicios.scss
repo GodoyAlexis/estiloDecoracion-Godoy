@@ -241,13 +241,14 @@ footer {
         background: linear-gradient(rgba(5, 7, 12, 0.66));
         height: 150px;
         width: 50%;
-  
+
         .c {
           font-size: 20px;
           padding-top: 15px;
         }
       }
     }
+
     div.cajaAsesoria {
       height: auto;
 
@@ -264,53 +265,49 @@ footer {
       div.carrousel {
         width: 100%;
         height: 200px;
+
         img {
           width: 100%;
           height: 200px;
-          object-fit: cover;
-          object-position: center;
         }
       }
     }
+
     div.contratanos {
       .cajasC {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row;
+        // flex-flow: row;
+
         .itemsContratanos1 {
-          object-fit: cover;
-          background-size: 100%;
-          background-position: center;
-          background-repeat: no-repeat;
-          overflow: hidden;
-          position: relative;
-          height: 100px;
-          width: 40%;
-  
+          height: 110px;
+          width: 70%;
+
           p {
             font-size: 16px;
-            line-height: 20px;
+            line-height: 18px;
           }
         }
+
         .itemsContratanos2 {
+          width: 100%;
+          padding-top: 30px;
+
           .ofrecemos {
-            color: white;
             font-size: 16px;
-            font-family: sans-serif;
             margin: 10px 0px;
+            width: 100%;
           }
-  
+
           .botonContratanos {
             width: 100%;
             margin: 5px;
             padding-right: 15px;
             font-size: 16px;
+            width: 80%;
           }
         }
       }
-      
+
     }
   }
 }

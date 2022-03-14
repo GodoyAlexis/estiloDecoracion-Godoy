@@ -8,7 +8,8 @@
 }
 
 body {
-  background-image: url(../images/fondoMadera.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(185, 188, 196, 0.65))), url(../images/fondoMadera.jpg);
+  background-image: linear-gradient(rgba(185, 188, 196, 0.65)), url(../images/fondoMadera.jpg);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -70,9 +71,13 @@ body {
 main .title {
   text-align: center;
   color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2rem;
   padding-top: .7em;
-  text-shadow: 2px 2px 0 black;
+  padding-bottom: .7em;
+  text-shadow: 2px 2px 3px black;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)));
+  background: linear-gradient(rgba(0, 0, 0, 0.75));
 }
 
 main .gallery {
@@ -162,6 +167,7 @@ main .gallery .gallery__img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 3px solid black;
 }
 
 main .gallery .gallery__picture--g1 {
